@@ -1,4 +1,4 @@
-angular.module("tutor", ["ngRoute", "ngResource", "ngAnimate", "ngMaterial", "ngCanvasGauge","tutor.services"]).config(function($routeProvider) {
+angular.module("tutor", ["ngRoute", "ngResource", "ngAnimate", "ngMaterial", "ngCanvasGauge", "tutor.services"]).config(function($routeProvider) {
 
     $routeProvider.
     when("/pretest", {
@@ -61,6 +61,6 @@ window.fbAsyncInit = function() {
     }
     js = d.createElement(s);
     js.id = id;
-    js.src = "libs/facebook/facebook.js";
+    js.src = "//connect.facebook.net/en_US/sdk.js";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
