@@ -100,11 +100,11 @@ tutorServices.service("User", function($http) {
 
         //-------------------------
 
-        var xhr = new XMLHttpRequest();
+        var http = new XMLHttpRequest();
 
         var url = "https://162.243.222.205:8282/back/CapstoneServlet";
         var data = JSON.stringify(response);
-        xhr.open("POST", url, true);
+        http.open("POST", url, true);
         console.log("point 1");
 
         //Send the proper header information along with the request
