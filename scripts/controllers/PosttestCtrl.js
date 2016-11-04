@@ -5,14 +5,15 @@ angular.module('tutor').controller("PosttestCtrl", function($scope, $location, U
 
     $scope.processAnswers = function() {
 
-        if ($scope.answers.length > 20) {
+        if ($scope.answers.length < 20) {
             $scope.msg = "Por favor, responda todas as perguntas!"
         } else {
-            var sum = $scope.answers.reduce(add, 0);
 
             function add(a, b) {
                 return parseInt(a) + parseInt(b);
-            }
+            };
+
+            var sum = $scope.answers.reduce(add, 0);
 
             User.setPosttestPoints(sum);
             console.log(User.getResponse());
