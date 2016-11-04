@@ -48,7 +48,7 @@ angular.module("tutor", ["ngRoute", "ngResource", "ngAnimate", "ngMaterial", "ng
 //GLOBAL - FACEBOOK API
 window.fbAsyncInit = function() {
     FB.init({
-        appId: '259201801144935',
+        appId: '1284240698294191',
         xfbml: true,
         version: 'v2.8'
     });
