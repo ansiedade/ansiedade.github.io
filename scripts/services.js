@@ -101,19 +101,25 @@ tutorServices.service("User", function($http) {
         //-------------------------
 
         var http = new XMLHttpRequest();
+
         var url = "http://162.243.222.205:8282/back/CapstoneServlet";
         var data = JSON.stringify(response);
         http.open("POST", url, true);
+        console.log("point 1");
 
         //Send the proper header information along with the request
         http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
+        console.log("point 2");
         http.onreadystatechange = function() { //Call a function when the state changes.
             if (http.readyState == 4 && http.status == 200) {
                 console.log(http.responseText);
             }
-        }
+        };
+
+        console.log("point 3");
+
         http.send(data);
+        console.log("passed 4");
     };
 
 });
