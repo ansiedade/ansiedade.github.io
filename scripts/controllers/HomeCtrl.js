@@ -1,7 +1,6 @@
 angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDialog, configService, User) {
     console.log("HomeCtrl ok");
 
-
     var answers = ['B', 'E', 'E', 'E', 'A', 'B', 'D', 'E', 'B', 'B', 'E', 'B', 'C', 'E', 'A', 'C', 'B', 'D', 'B', 'A'];
     var userAnswer = null;
     var totalPoints = 0;

@@ -86,8 +86,7 @@ tutorServices.service("User", function($http) {
         $http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
 
         $http({
-            // url: "http://162.243.222.205:8282/back/CapstoneServlet",
-            url: "http://162.243.222.205:8000",
+            url: "http://162.243.222.205:8282/back/CapstoneServlet",
             method: "POST",
             data: JSON.stringify(response)
         }).then(function(response) {

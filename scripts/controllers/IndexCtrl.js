@@ -1,3 +1,4 @@
-angular.module('tutor').controller("IndexCtrl", function($scope) {
-   
+angular.module('tutor').controller("IndexCtrl", function($scope, $window) {
+
+
 });
